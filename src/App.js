@@ -14,8 +14,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.state.names.map((name) =>
-          <Welcome name={name} />
+        {this.state.names.map((name, index) =>
+          <Welcome key={index} name={name} />
         )}
       </div>
     );

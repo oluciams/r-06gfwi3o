@@ -4,7 +4,7 @@ const Welcome = (props)=>{
 
   return(
 
-    <h1>Hola {props.name}</h1>
+    <h1 key={props.key}>Hola {props.name}</h1>
     
   )
 }
